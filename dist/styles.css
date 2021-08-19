@@ -216,8 +216,7 @@ Correct the inability to style clickable types in iOS and Safari.
 */
 
 button,
-[type='button'],
-[type='submit'] {
+[type='button'] {
   -webkit-appearance: button;
 }
 
@@ -589,6 +588,11 @@ video {
   margin-right: 1rem;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .flex {
   display: flex;
 }
@@ -603,6 +607,10 @@ video {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.w-60 {
+  width: 15rem;
 }
 
 .w-1\/2 {
@@ -811,6 +819,11 @@ video {
 
 *, ::before, ::after {
   --tw-shadow: 0 0 #0000;
+}
+
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 *, ::before, ::after {
